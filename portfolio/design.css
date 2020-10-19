@@ -1,0 +1,109 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #CAFFFB;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.header{
+    background-color: #048243;
+    background-size: cover;
+    height: 120px;
+    margin: 0;
+
+}
+
+.picture{
+    border-radius: 100%;
+    border: solid 3px;
+    border-color: #048243;
+}
+
+a[target]{
+    color: white;
+    background-color: #32bf84;
+    padding: 15px 30px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu{
+    color: white;
+    background-color: #32BF84;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+
+.menulogo{
+    background-color: #32BF84;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin: 10px 20px;
+}
+
+h2{
+    color: #048243;
+    font-family: monospace;
+    line-height: 60px;
+    margin: 40px 20px 0px 20px;
+    font-size: 29px;
+}
+
+
+p{
+    color: black;
+    margin: 20px 20px;
+}
+
+head {
+    background-color: yellow;
+}
+
+.lista_1 {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.lista_2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.lista_3 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.lista_4 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.lista_5 {
+    font-size: 21px;
+    line-height: 40px;
+}
+
+.lista_6 {
+    font-size: 23px;
+    line-height: 40px;
+}
+
+.lista_7 {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.lista_8 {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.margin{
+    
+}
