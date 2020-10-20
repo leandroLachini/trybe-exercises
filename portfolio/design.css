@@ -11,23 +11,13 @@ body{
     background-size: cover;
     height: 120px;
     margin: 0;
-    display: inline-block;
-
 }
 
-.picture{
-    border: solid 3px;
-    border-color: #048243;
-    width: 250px;
-}
-
-a[target]{
-    color: white;
-    background-color: #32bf84;
-    padding: 15px 30px;
+.menulogo{
+    background-color: #32BF84;
+    padding: 10px 20px;
     border-radius: 7px;
-    font-weight: 600;
-    text-decoration: none;
+    margin: 10px 20px;
 }
 
 .menu{
@@ -38,21 +28,49 @@ a[target]{
     font-weight: 600;
     text-decoration: none;
     margin: 10px 10px;
+    display: inline-block;
+    }
+
+.config_1 {
+    background-color: #048243;
     
 }
 
-.menulogo{
-    background-color: #32BF84;
-    padding: 10px 20px;
-    border-radius: 7px;
-    margin: 10px 20px;
+.picture{
+    border: solid 3px;
+    border-color: #048243;
+    width: 250px;
 }
+
+.float-left{
+    float: left;
+    
+}
+
+.float-right{
+    float: right;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.clear {
+    clear: both;
+}
+
+a[target]{
+    color: white;
+    background-color: #32bf84;
+    padding: 15px 30px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    }
 
 h2{
     color: #048243;
     font-family: monospace;
-    line-height: 60px;
-    margin: 40px 20px 0px 20px;
+
     font-size: 29px;
     text-align: center;
 }
@@ -62,10 +80,6 @@ p{
     color: black;
     margin: 10px 20px;
     line-height: 30px;
-}
-
-head {
-    background-color: yellow;
 }
 
 .lista_1 {
@@ -108,13 +122,3 @@ head {
     line-height: 40px;
 }
 
-.float-left{
-    float: left;
-}
-
-.float-right{
-    float: right;
-    color: black;
-    margin: 20px 20px;
-    line-height: 30px;
-}
