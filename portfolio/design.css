@@ -11,13 +11,14 @@ body{
     background-size: cover;
     height: 120px;
     margin: 0;
+    display: inline-block;
 
 }
 
 .picture{
-    border-radius: 100%;
     border: solid 3px;
     border-color: #048243;
+    width: 250px;
 }
 
 a[target]{
@@ -37,6 +38,7 @@ a[target]{
     font-weight: 600;
     text-decoration: none;
     margin: 10px 10px;
+    
 }
 
 .menulogo{
@@ -52,12 +54,13 @@ h2{
     line-height: 60px;
     margin: 40px 20px 0px 20px;
     font-size: 29px;
+    text-align: center;
 }
 
 
 p{
     color: black;
-    margin: 20px 20px;
+    margin: 10px 20px;
     line-height: 30px;
 }
 
@@ -105,6 +108,13 @@ head {
     line-height: 40px;
 }
 
-.margin{
-    
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+    color: black;
+    margin: 20px 20px;
+    line-height: 30px;
 }
