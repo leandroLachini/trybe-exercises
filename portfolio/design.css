@@ -21,12 +21,12 @@ body{
     font-weight: 600;
     text-decoration: none;
     margin: 10px 10px;
-    
+    display: inline-block;
     }
 
-.menu {
+/* .menu {
     display: inline-block;
-}
+} */
 
 .config_1 {
     background-color: #048243;
