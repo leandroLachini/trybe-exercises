@@ -13,13 +13,6 @@ body{
     margin: 0;
 }
 
-.menulogo{
-    background-color: #32BF84;
-    padding: 10px 20px;
-    border-radius: 7px;
-    margin: 10px 20px;
-}
-
 .menu{
     color: white;
     background-color: #32BF84;
@@ -28,34 +21,46 @@ body{
     font-weight: 600;
     text-decoration: none;
     margin: 10px 10px;
-    display: inline-block;
+    
     }
+
+.menu {
+    display: inline-block;
+}
 
 .config_1 {
     background-color: #048243;
+    
+    max-width: 80%;
     
 }
 
 .picture{
     border: solid 3px;
     border-color: #048243;
-    width: 250px;
+    width: 100%;
+    margin-right: 10px;
 }
 
 .float-left{
     float: left;
+    width: 50%;
+    /* margin-left: 50px; */
     
 }
 
 .float-right{
     float: right;
-    vertical-align: middle;
-    display: inline-block;
+    width: 50%;
+    
 }
 
 
 .clear {
     clear: both;
+    text-align: center;
+    border-top: 5px solid purple;
+    width: 80%;
 }
 
 a[target]{
@@ -65,12 +70,13 @@ a[target]{
     border-radius: 7px;
     font-weight: 600;
     text-decoration: none;
+
     }
 
 h2{
     color: #048243;
     font-family: monospace;
-    line-height: 60px;
+    line-height: 40px;
     font-size: 29px;
     text-align: center;
 }
@@ -82,43 +88,15 @@ p{
     line-height: 30px;
 }
 
-.lista_1 {
+.skills_3 {
+    width: 80%;
     font-size: 25px;
     line-height: 40px;
 }
 
-.lista_2 {
-    font-size: 30px;
-    line-height: 40px;
-}
-
-.lista_3 {
-    font-size: 20px;
-    line-height: 40px;
-}
-
-.lista_4 {
-    font-size: 24px;
-    line-height: 40px;
-}
-
-.lista_5 {
-    font-size: 21px;
-    line-height: 40px;
-}
-
-.lista_6 {
-    font-size: 23px;
-    line-height: 40px;
-}
-
-.lista_7 {
-    font-size: 22px;
-    line-height: 40px;
-}
-
-.lista_8 {
-    font-size: 26px;
-    line-height: 40px;
+.skills_3.1 {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
 }
 
