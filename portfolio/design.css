@@ -70,7 +70,7 @@ a[target]{
 h2{
     color: #048243;
     font-family: monospace;
-
+    line-height: 60px;
     font-size: 29px;
     text-align: center;
 }
