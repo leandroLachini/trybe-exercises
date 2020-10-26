@@ -59,7 +59,7 @@ if (somaAngulos === 180) {
 
 // Exercicio 6
 
-let xadrezPeca = 'peao';
+let xadrezPeca = 'rainha';
 
 switch (xadrezPeca.toLowerCase()){
   case 'rei':
@@ -87,7 +87,7 @@ switch (xadrezPeca.toLowerCase()){
 
 // Exercicio 7
 
-let notaProva = 101;
+let notaProva = 91;
 
 if(notaProva < 0 || notaProva > 100){
   console.log('Nota informada não válida!');
