@@ -1,6 +1,6 @@
 // Exercicios Aula Estudo
 
-let valores = [8, 1, 7, 4, 2, 9]
+let valores = [8, 1, 7, 4, 2, 9];
 valores.sort()
 
 for(let pos=0; pos<valores.length; pos++){
@@ -14,7 +14,7 @@ for(let pos in valores){
 
 // Exercicios 1
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27]
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 
 for(let index=0; index < numbers.length; index++){
@@ -115,3 +115,56 @@ console.log(num1A25);
 for (let primeiroNum=0; primeiroNum<=num1A25.length; primeiroNum +=1){
     console.log(num1A25[primeiroNum] / 2);
 }
+
+// Exercicios BONUS 1
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for(let i=1; i < numbers.length; i +=1){
+    for( let j=0; j < i; j +=1){
+        if (numbers[i] < numbers[j]){
+            let position = numbers[i];
+    
+            numbers[i] = numbers[j]
+            numbers[j] = position;
+        }
+    }
+}
+
+console.log(numbers);
+
+
+// Exercicios BONUS 2
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for(let i=1; i < numbers.length; i +=1){
+    for( let j=0; j < i; j +=1){
+        if (numbers[i] > numbers[j]){
+            let position = numbers[i];
+    
+            numbers[i] = numbers[j]
+            numbers[j] = position;
+        }
+    }
+}
+
+console.log(numbers);
+
+
+// Exercicios BONUS 3
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+let newNumbers = [];
+
+for(let x=0; x < numbers.length; x +=1){
+    if (numbers[x + 1]){
+        newNumbers.push(numbers[x] * numbers[x + 1])
+    } else {
+        newNumbers.push(numbers[x] * 2)
+    }
+}
+
+console.log(newNumbers);
+
