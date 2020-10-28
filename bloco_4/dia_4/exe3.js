@@ -1,4 +1,4 @@
-// Exercicio 1
+// Exercicio 3
 
 let info = {
   personagem: "Margarida",

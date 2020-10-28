@@ -1,4 +1,4 @@
-// Exercicio 1
+// Exercicio 5
 
 let info = {
   personagem: "Margarida",
@@ -12,6 +12,14 @@ let info2 ={
   nota: "O último MacPatinhas",
 };
 
+
 info.recorrente= 'Sim';
 info2.recorrente= 'Sim';
-console.log(info2);
+
+for(key in info){
+  if ( info[key] === info.recorrente && info[key] === "Sim" && info2[key] === "Sim") {
+      console.log("Ambos recorrentes");
+    } else {
+      console.log(info[key] + " e " + info2[key]);
+    }
+  }
