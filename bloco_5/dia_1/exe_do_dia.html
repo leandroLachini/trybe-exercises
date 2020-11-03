@@ -45,11 +45,43 @@
         texto.innerHTML = 'BE HAPPY';
       }
      mudarTexto();
-     
 
-      // document.getElementsByClassName('.main-content').style.background rgb(76,164,109);
-      // document.getElementsByClassName('.center-content').style.background white;
-      // document.getElementsByTagName('h1') = 'SEXTOUUUU';
+
+      function mudarCorQuadradoAmarelo() {
+      let corFundo = document.getElementsByClassName('main-content')[0];
+      corFundo.style.backgroundColor = 'rgb(76,164,109)';
+      }
+      mudarCorQuadradoAmarelo();
+
+
+      function mudarCorQuadradoVermelho() {
+        let corFundoCentro = document.getElementsByClassName('center-content')[0];
+      corFundoCentro.style.backgroundColor = 'white';
+      }
+     mudarCorQuadradoVermelho ();
+
+
+     function novoTexto() {
+        let textoCriado = document.getElementsByTagName('h1')[0];
+        textoCriado.innerHTML = 'SEXTOUUUU';
+     }
+     novoTexto ();
+
+
+     function textoUpper() {
+        let letrasUpper = document.getElementsByTagName('p')[0];
+        letrasUpper.innerHTML = letrasUpper.innerHTML.toUpperCase();
+     }
+     textoUpper ();
+
+     function exibirConteudo() {
+       let conteudo = document.getElementsByName('p');
+       for (let index = 0; index < conteudo.length; index += 1) {
+        console.log(conteudo[index].innerHTML);
+      }
+    }
+    exibirConteudo();
+
       // document.getElementsByTagName('P').style.upperCase;
       // document.getElementsByTagName('p');
 
