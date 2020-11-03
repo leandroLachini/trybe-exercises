@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    // exercicio 1
+    let num1 = document.createElement('h1');
+    num1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+    document.body.appendChild(num1);
+
+    // exercicio 2
+    let num2 = document.createElement('div');
+    num2.className = 'main-content';
+    document.body.appendChild(num2);
+
+    // exercicio 3
+    let num3 = document.createElement('div');
+    num3.className = 'center-content';
+    num2.appendChild(num3);
+
+    // exercicio 4
+    let num4 = document.createElement('p');
+    num3.appendChild(num4);
+    num4.innerHTML = 'Aprendendo a mamipular o DOM';
+
+    // exercicio 5
+    let num5 = document.createElement('div');
+    num5.className = 'left-content';
+    num2.appendChild(num5);
+
+    // exercicio 6
+    let num6 = document.createElement('div');
+    num6.className = 'right-content';
+    num2.appendChild(num6);
+
+    // exercicio 7
+    let num7 = document.createElement('img');
+    num7.src = 'https://picsum.photos/200';
+    num7.className = 'small-image';
+    num5.appendChild(num7);
+
+    // exercicio 8
+    let num8 = document.createElement('ul');
+    num6.appendChild(num8);
+    let numAteDez = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+    for (let key in numAteDez){
+      let num8List = document.createElement('li');
+      num8List.innerHTML = numAteDez[key];
+      num8.appendChild(num8List);
+    }
+
+    // exercicio 9
+    for( let index = 1; index <=3; index += 1){
+    let num9 = document.createElement('h3');
+    num9.innerHTML = `Tag h3 numero ${index}`;
+    num2.appendChild(num9);
+    }
+
+
+    // PARTE 2
+
+    // exercicio 1
+
+    let mud1 = document.getElementsByTagName('h1')[0];
+    mud1.className = 'title';
+
+    // exercicio 2
+
+    let mud2 = document.getElementsByTagName('h3');
+    for ( let index = 0; index < 3; index += 1){
+    mud2[index].className = 'description';
+    }
+
+    // exercicio 3
+    let mud3 = document.getElementsByClassName('left-content')[0];
+    num2.removeChild(mud3);
+
+    // exercicio 4
+    let mud4 = document.getElementsByClassName('right-content')[0];
+    mud4.style.marginRigth = 'auto';
+
+    // exercicio 5
+    let mud5 = document.getElementsByClassName('center-content')[0];
+    mud5.style.backgroundColor = 'green';
+
+    // exercicio 6
+    num8.lastChild.remove();
+    num8.lastChild.remove();
+
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
