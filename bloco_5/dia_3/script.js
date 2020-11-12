@@ -1,10 +1,10 @@
 function createDaysOfTheWeek() {
     const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
-    const weekDaysList = document.querySelector('.week-days');
-  
+    const weekDaysList = document.querySelector('.week-days'); // buscando o primeiro elemento com a classe week-days
+    
     for (let index = 0; index < weekDays.length; index += 1) {
       const days = weekDays[index];
-      const dayListItem = document.createElement('li');
+      const dayListItem = document.createElement('li'); // criando elemento e guardando em uma variavel
       dayListItem.innerHTML = days;
   
       weekDaysList.appendChild(dayListItem);
