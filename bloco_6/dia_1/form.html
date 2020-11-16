@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box-container">
+        <fieldset id="box1">
+            <legend>Dados Pessoais</legend>
+                <label for="nome-pessoa">Nome Completo.:</label>
+                <input type="text" name="nome" id="nome-pessoa" maxlength="40" required>
+                <br>
+                <label for="nome-pessoa">Email.:</label>
+                <input type="email" name="e-mail" id="email-pessoa" maxlength="50" required>
+                <br>    
+                <label for="cpf-pessoa">CPF.:</label>
+                <input type="text" name="cpf" id="cpf-pessoa" minlength="11" maxlength="11" required>
+                <br>    
+                <label for="endereco-pessoa">Endereço.:</label>
+                <input type="text" name="endereco" id="endereco-pessoa" maxlength="200" required>
+                <br>    
+                <label for="cidade-pessoa">Cidade.:</label>
+                <input type="text" name="cidade" id="cidade-pessoa" maxlength="28" required>
+                <br>
+                <select name="estado" id="lista-estados" required>
+                    <option value="" required>Selecione um Estado</option>
+
+                </select>
+                <br>    
+                <input type="radio" name="tipo" id="tipo-pessoa" checked>
+                <label for="tipo-pessoa">Casa</label>
+                <input type="radio" name="tipo" id="apto-pessoa" checked>
+                <label for="apto-pessoa">Apartamento</label>
+        </fieldset>
+    </div>  
+    <div class="box-container">
+        <fieldset id="box2">
+            <legend>Último Emprego</legend>
+                <label for="resumo-cv">Resumo do currículo.:</label>
+                <br>
+                <textarea name="resumo" id="resumo-cv" cols="30" rows="10" maxlength="1000" required></textarea>
+                
+                <br>
+                <label for="cargo">Cargo.:</label>
+                <input type="text" name="cargo" id="cargo" maxlength="40" required>
+                <br>    
+                <label for="cargo-descricao">Descrição Cargo.:</label>
+                <input type="text" name="descricao-cargo" id="cargo-descricao" maxlength="500" required>
+                <br>     
+                <label for="data-inicio">Data de Início.:</label>
+                <input type="text" name="data-inicio" id="data-inicio" maxlength="10" required>
+            
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
