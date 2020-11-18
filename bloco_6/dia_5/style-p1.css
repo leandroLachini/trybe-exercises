@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#centro {
+    width: 90%;
+    height: 100%;
+    background: #333;    
+}
+
+#topo {
+    width: 100%;
+    height: 20%;
+    background: #f00;
+}
+
+#topo h1 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+
+.colunas2 {
+    /* width: 50%;
+    float: left; */
+    /* display: flex; */
+    background: #999;
+    text-align: center;
+    height: 30%;
+}
+
+.container-colunas {
+    display: flex;
+    justify-content: stretch;
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+
+#centro {
+    width: 100%;
+}
+
+#topo {
+    background: #ff0;
+}
+
+#topo h1 {
+    color: #f00;
+}
+
+.colunas2 {
+    /* width: 100%;
+    float: none; */
+    background: #f00;
+    margin-top: 5px;
+}
+
+.container-colunas {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+}
